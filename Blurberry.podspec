@@ -6,8 +6,12 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "Pavel Puzyrev" => "cannedapp@yahoo.com" }
   spec.source       = { :git => 'https://github.com/unboxme/Blurberry.git', :tag => spec.version }
-  spec.source_files = "Sources/**/*.{swift,h,m}"
+  spec.source_files = [
+    "Sources/Blurberry/**/*.{swift}",
+    "Sources/BlurberryObjC/**/*.{m,h}"
+  ]
+  spec.public_header_files = "Sources/BlurberryObjC/include/**/*.h"
 
-  spec.swift_version         = "5.0"
-  spec.ios.deployment_target = "10.0"
+  spec.swift_version         = "6.2"
+  spec.ios.deployment_target = "12.0"
 end

@@ -25,6 +25,7 @@
 //  THE SOFTWARE.
 
 import UIKit
+import BlurberryObjC
 
 internal extension BlurWrapper where Base: UIVisualEffectView {
     
