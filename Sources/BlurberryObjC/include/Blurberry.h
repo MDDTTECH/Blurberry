@@ -34,4 +34,4 @@ FOUNDATION_EXPORT const unsigned char BlurberryVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Blurberry/PublicHeader.h>
 
-#import <Blurberry/NSObject+Extension.h>
+#import "NSObject+Extension.h"
